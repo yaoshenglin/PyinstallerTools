@@ -70,7 +70,7 @@ class ButtonFrame(wx.Dialog):
                 if value == None:value = ''
                 textCtrl.SetLabel(value)
                 # 设置插入点
-                wx.CallAfter(textCtrl.SetInsertionPoint,len(value))
+                wx.CallAfter(textCtrl.SetInsertionPoint,0)
             else:
                 print(FileO.Obj.cN(textCtrl), textCtrl)
 
